@@ -1,4 +1,4 @@
-# 50projects50days
+# 50 Projects 50 Days
 50+ mini web projects using HTML, CSS & JS
 
 | #  |       Project       | Live Demo |
