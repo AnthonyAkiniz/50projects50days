@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #efedd6;
+  font-family: 'Indie Flower', cursive;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  overflow-x: hidden;
+}
+
+h1 {
+  margin: 10px;
+}
+
+h4 {
+  margin-top: 10px;
+  text-align: right;
+}
+
+.text-area {
+  margin-top: 30px;
+  text-align: left;
+  font-size: 22px;
+  color: #262626;
+  line-height: 1.5;
+}
+
+.box .author {
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  color: red;
+  text-align: bottom;
+  margin-top: 20px;
+  font-size: 15px;
+  padding: -5px 0 10px 0px;
+}
+
+.box {
+  background-image: url('./paper.jpg');
+  color: rgb(0, 0, 0);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 400px;
+  height: 200px;
+  margin: 10px;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 2px 4px 5px rgba(0, 0, 0, 0.3);
+  transform: translateX(400%);
+  transition: transform 0.4s ease;
+}
+
+.box:nth-of-type(even) {
+  transform: translateX(-400%);
+}
+
+.box.show {
+  transform: translateX(0);
+}
+
+.box h2 {
+  font-size: 45px;
+}
